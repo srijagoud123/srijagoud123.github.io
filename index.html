@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tapon Bytes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="nav-bar">
+      <div class="logo">Tapon<span>Bytes</span>
+    </div>
+  
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <div class="navbar-links" id="navLinks">
+        <a class="a-element" href="#Home">Home</a>
+        <a class="a-element" href="#Services">Services</a>
+        <a class="a-element" href="#About">About</a>
+        <a class="a-element" href="#Clients">Clients</a>
+        <a class="a-element" href="#Contacts">Contacts</a>
+        <a class="a-element" href="#GetQuote">Get Quote</a>
+      </div>
+    </div>
+  </header>
+  
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("show");
+    }
+  </script>
+
+<!-- Home Section -->
+<div class="home-section" id="Home">
+  <div class="home-content">
+    <h1>Web, App & Digital Marketing Experts</h1>
+    <p><strong>We build powerful websites, apps, and campaigns to grow your brand online</strong></p>
+    <div class="home-buttons">
+      <a href="start.html" class="btn primary">Start Your Work</a>
+      <a href="#" class="btn secondary">View Our Work</a>
+    </div>
+  </div>
+</div>
+<!--Service Section-->
+  <div class="services-section" id="Services">
+    <h2>Services We Offer</h2>
+    <p class="description">Explore our tailored solutions designed to drive growth, innovation, and digital excellence.</p>
+    <div class="services-container">
+      <div class="service-card">
+        <div class="icon">📢</div>
+        <h3>Digital Marketing</h3>
+        <p>Marketing strategies that drive engagement and growth.</p>
+        <a href="#">Learn More →</a>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">💻</div>
+        <h3>Theatre Billing Software</h3>
+        <p>Seamless ordering and billing tailored for theatres.</p>
+        <a href="#">Learn More →</a>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">📦</div>
+        <h3> NFC Boards (Acrylic & Metal)</h3>
+        <p>Precision-built NFC boards for fast,contactless access.</p>
+        <a href="#">Learn More →</a>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">✨</div>
+        <h3> Magical Review QR System</h3>
+        <p>Effortless feedback collection through smart QR technology</p>
+        <a href="#">Learn More →</a>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">🏢</div>
+        <h3> Offline Marketing (Auto ads, newspapers, etc.)</h3>
+        <p>Targeted offline campaigns built to maximize local reach.</p>
+        <a href="#">Learn More →</a>
+      </div>
+      <div class="service-card">
+        <div class="icon">🎨 </div>
+        <h3> Branding & Design (Logo, menu, packaging, etc.)</h3>
+        <p>Strategic branding and design to elevate your business presence.</p>
+        <a href="#">Learn More →</a>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">🌐</div>
+        <h3>Website Design & Development</h3>
+        <p>Custom websites built for performance, usability, and brand impact.</p>
+        <a href="#">Learn More →</a>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">📲</div>
+        <h3> Mobile App Development (Android, iOS, Tab)</h3>
+        <p>Intuitive mobile apps built for performance across Android, iOS, and tablets.</p>
+        <a href="#">Learn More →</a>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <script>
+    const menu = document.querySelector('.navbar-links');
+    const links = document.querySelectorAll('.a-element');
+    const toggleBtn = document.querySelector('.hamburger'); // your hamburger button
+  
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+       menu.classList.remove('show')// optional: update hamburger icon
+      });
+    });
+  </script>
+</body>
+</html>
