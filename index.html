@@ -10,7 +10,11 @@
 <body>
   <header>
     <div class="nav-bar">
-      <div class="logo">Tapon<span>Bytes</span>
+      <div class="logo">
+        <img src="img/logo.png" alt="logo-image" class="logo-image">
+
+        <p class="logo-text"><b>Tapon</b></p><span>Bytes</span>
+       
     </div>
   
       <div class="hamburger" onclick="toggleMenu()">☰</div>
@@ -113,7 +117,7 @@
   
     links.forEach(link => {
       link.addEventListener('click', () => {
-       menu.classList.remove('show')// optional: update hamburger icon
+       menu.classList.remove('show') //update hamburger icon
       });
     });
   </script>
