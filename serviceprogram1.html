@@ -8,8 +8,88 @@
         body{
             background-color: rgb(168, 200, 221);
             margin-bottom: 20px;
-            margin-top: auto;
+           margin: 0;
+           padding: 0;
         }
+
+
+header {
+  background-color: white;
+  padding: 10px 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+   box-sizing: border-box;
+  z-index: 999;
+}
+
+/* Navbar layout */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+/* Logo */
+.logo-image{
+  width: 60px;
+  height: 60px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+ 
+}
+
+.logo span {
+  color: #3e34ca;
+}
+
+
+/* Hamburger hidden by default */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Links container - default desktop */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.a-element {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.a-element:hover {
+  color: #3d11b6;
+}
+
+.a-element:last-child {
+  background-color:#3e34ca;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.a-element:last-child:hover {
+  background-color: #534dde;
+}
+
         .service-section{
             text-align: center;
             padding: 40px;   
@@ -70,13 +150,81 @@
        .image-icon{
         width: 78%;
        }
+       @media (max-width: 768px){
+    .hamburger {
+    display: block;
+    margin-left: 10px;
+  
+  }
+  .logo {
+    margin-right: 40px;
+    font-size: 20px;
+  
+   }
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    padding: 20px;
+    box-shadow: -2px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+
+  .navbar-links.show {
+    display: flex;
+  }
+
+  .a-element {
+    padding: 10px 0;
+  }
+
+  .a-element:last-child {
+    width: 100%;
+    text-align: center;
+  }
+
+
+        p{
+            font-size: 120%;
+           
+        }
+       }
         
     </style>
 </head>
 <body>
+    <header>
+        <div class="nav-bar">
+          <div class="logo">
+            <img src="img/logo.png" alt="logo-image" class="logo-image">
+    
+            <p class="logo-text"><b>Tapon</b></p><span>Bytes</span>
+           
+        </div>
+      
+          <div class="hamburger" onclick="toggleMenu()">☰</div>
+          <div class="navbar-links" id="navLinks">
+            <a class="a-element" href="/index.html">Home</a>
+            <a class="a-element" href="#Services">Services</a>
+            <a class="a-element" href="#About">About</a>
+            <a class="a-element" href="#Clients">Clients</a>
+            <a class="a-element" href="#Contacts">Contacts</a>
+            <a class="a-element" href="#GetQuote">Get Quote</a>
+          </div>
+        </div>
+      </header>
+      <script>
+        function toggleMenu() {
+          document.getElementById("navLinks").classList.toggle("show");
+        }
+      </script>
     <div class="service-section" id="services">
             <h1>Digital Marketing</h1>
-            <p><b>At TaponBytes, we help businesses grow their online presence <br>through smart and effective digital marketing strategies</b></p>
+            <p><b>At TaponBytes, we help businesses grow their online presence through smart and effective digital marketing strategies</b></p>
             <strong>Here's what we offer:</strong>
         </div>
 
