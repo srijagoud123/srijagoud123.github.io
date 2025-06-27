@@ -96,6 +96,7 @@ header {
 .a-element:last-child:hover {
   background-color: #534dde;
 }
+/*service offer*/
 
         .service-section{
             text-align: center;
@@ -125,7 +126,7 @@ header {
        }
        .service-card{
         flex:1 1 calc(25% - 30px);
-        background-color: #f4f4f4;
+        background-color: #f8f8f8;
         padding: 15px;
         border-radius: 12px;
         box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -152,12 +153,12 @@ header {
        }
        .img-icon{
         width:50%;
-        background-color: bisque;
+        background-color: rgb(177, 174, 171);
        }
        .image-icon{
         width: 78%;
        }
-       @media (max-width: 768px){
+    @media (max-width: 768px){
     .hamburger {
     display: block;
     margin-left: 10px;
@@ -193,16 +194,28 @@ header {
     width: 100%;
     text-align: center;
   }
-
-
-        p{
-            font-size: 120%;
-        }
-           .service-row{
-            width: 100%;
-            margin-bottom: 10px;
+  /*service-offer*/ 
+  h1{
+    font-size: 150%;
+  }
+  p {
+    font-size: 120%;
+    }
+  strong{
+    font-size: 150%;
+  }
+    .service-row{
+      width: 100%;
+      margin-bottom: 10px;
+      flex-direction: column;
+    }
+    .service-card{
+      flex:1 1 100%;
+      max-width: 100%;
     }
        }
+
+       
         
     </style>
 </head>
@@ -245,7 +258,7 @@ header {
         <ul class="service-list">
             <li>- Reels and post planning</li>
             <li>- Hashtag strategy</li>
-            <li>- Boost engagement and reach<</li>
+            <li>- Boost engagement and reach</li>
         </ul> 
         </div>
 
