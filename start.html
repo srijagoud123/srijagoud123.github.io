@@ -14,8 +14,8 @@
 
     body {
       font-family: 'Arial', sans-serif;
-      background: linear-gradient(to bottom, #1c1c1e, rgb(128, 156, 218));
-      color: white;
+      background:rgb(243, 242, 250);
+      color: rgb(53, 79, 196);
       min-height: 100vh;
       display: flex;
       align-items: center;
@@ -26,7 +26,7 @@
     .container {
       display: flex;
       flex-direction: row;
-      background: rgba(255, 255, 255, 0.05);
+      background: rgba(92, 59, 240, 0.05);
       border-radius: 12px;
       padding: 40px;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
@@ -35,6 +35,10 @@
       max-width: 900px;
       margin: auto;
       gap: 20px;
+    }
+    h2{
+      text-align: center;
+      color: blue;
     }
 
     .form-box {
@@ -77,6 +81,7 @@
       font-size: 1em;
       cursor: pointer;
     }
+   
 
     .team-images {
       position: relative;
@@ -180,9 +185,20 @@
 
         <label for="details">Project Details</label>
         <textarea id="details" rows="4" name="Project_details" placeholder="Describe your project..."></textarea>
-
+        
+        <label for="budget">Select Your Budget</label>
+        <select id="budget" name="budget">
+          <option value="Disable Selected">Select your budget</option>
+          <option value="15k">15000-25000</option>
+          <option value="25k">25000-35000</option>
+          <option value="35k">35000+</option>
+          <option value="other">other</option>     
+        </select>
+        <!--Hidden input box for other-->
+        
         <button type="submit">Submit</button>
       </form>
+   
     </div>
 
     <div class="team-images"> 

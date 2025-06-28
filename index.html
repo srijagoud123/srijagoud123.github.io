@@ -6,6 +6,7 @@
   <title>Tapon Bytes</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <!-- nav-bar section -->
@@ -42,9 +43,11 @@
     <h1>Web, App & Digital Marketing Experts</h1>
     <p><strong>We build powerful websites, apps, and campaigns to grow your brand online</strong></p>
     <div class="home-buttons">
-      <a href="#" class="btn primary">learn more -></a>
+      <a href="start.html" class=" btn primary">Start Your Work</a>
+      <a href="#" class=" btn secondary">View Our Work</a>
     </div>
   </div>
+  
 </div>
 <!--Service Section-->
   <div class="services-section" id="Services">
@@ -106,10 +109,90 @@
         <h3> Mobile App Development (Android, iOS, Tab)</h3>
         <p>Intuitive mobile apps built for performance across Android, iOS, and tablets.</p>
         <a href="#">Learn More →</a>
-      </div>
-      
+      </div> 
     </div>
   </div>
+
+  <!--Responsive counter section-->
+
+  <div class=" stats-section">
+    <div class="stat-box">
+      <i class="fa-solid fa-chart-line"></i>
+      <div class="stat-number" data-target="89">0</div>
+      <div class="stat-label">projects completed</div>
+    </div>
+
+    <div class="stat-box">
+      <i class="fa-solid fa-thumbs-up"></i>
+      <div class="stat-number" data-target="87">0</div>
+      <div class="stat-label">%Client Satisfaction</div>
+    </div>
+
+    <div class="stat-box">
+      <i class="fa-solid fa-business-time"></i>
+      <div class="stat-number" data-target="5">0</div>
+      <div class="stat-label">Years Experience</div>
+    </div>
+
+    <div class="stat-box">
+      <i class="fa-solid fa-headset"></i>
+      <div class="stat-number" data-target="24">0</div>
+      <div class="stat-label">/7 support</div>
+    </div>
+    <div class="stat-box">
+      <i class="fa-solid fa-laptop-file"></i>
+      <div class="stat-number" data-target="60">0</div>
+      <div class="stat-label">% of projects under 30k</div>
+    </div>
+    <div class="stat-box">
+      <i class="fa-solid fa-person"></i>
+      <div class="stat-number" data-target="128">0</div>
+      <div class="stat-label">Clients</div>
+    </div>
+    
+  </div>
+
+  <script>
+    
+  const counters = document.querySelectorAll('.stat-number');
+
+  const animateCounters = () => {
+    counters.forEach(counter => {
+      const target = +counter.getAttribute('data-target');
+      let count = 0;
+
+      const duration = 2000; // total animation duration in ms (2 seconds)
+      const steps = 100;     // total number of increments
+      const increment = target / steps;
+      const delay = duration / steps;
+
+      const updateCount = () => {
+        count += increment;
+        if (count < target) {
+          counter.innerText = Math.floor(count);
+          setTimeout(updateCount, delay);
+        } else {
+          counter.innerText = target;
+        }
+      };
+
+      updateCount();
+    });
+  };
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCounters();
+        observer.disconnect(); // only once
+      }
+    });
+  });
+
+  observer.observe(document.querySelector('.stats-section'));
+</script>
+
+
 
   <!--Why-choose section-->
   <div class="why-choose-section">
@@ -137,10 +220,10 @@
 
 <div class="Ready-to-start">
   <h2>Ready to Start Your Project?</h2><br>
-  <p>We are ready to help build your idea.<br>Just click and let's get started.</p><br>
+  <p>We are ready to help build your idea.Just click and let's get started.</p><br>
   <div class="Ready-button">
-  <a href="start.html" class=" btn primary">GetFree Quote</a>
-  <a href="#" class=" btn secondary">Our Results</a>
+  <a href="#" class=" btn primary">GetFree Quote</a>
+
 </div>
 </div>
 
