@@ -239,6 +239,8 @@ body {
   background-color: #f8f9ff;
   color: #333;
   padding: 1rem;
+  background-size: 100%;
+  background-image: url("https://i.ytimg.com/vi/Fmdbcf5qVjk/maxresdefault.jpg");
 }
 
 .services-section {
@@ -394,6 +396,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  
 }
 
 .why-choose-section {
@@ -402,6 +405,8 @@ body {
   align-items: flex-start;
   padding: 40px;
   gap: 40px;
+background-size: 100%;
+  background-image: url("https://i.ytimg.com/vi/Fmdbcf5qVjk/maxresdefault.jpg");
 }
 
 .text-content {
@@ -502,16 +507,20 @@ body {
   text-align: center;
   margin: 0;
   padding: 30px 30px;
-  background-color:  #435ec0;
+  background-color:  #84858d;
+  background-size: 100%;
+background-image: url("https://i.ytimg.com/vi/Fmdbcf5qVjk/maxresdefault.jpg");
+  
 }
 
 .Ready-to-start h2 {
   font-size: 35px;
-  color: white;
+  color:  #3e34ca;
 }
 .Ready-to-start p {
   font-size: 18px;
-  color: white;
+  color: #3e34ca;
+  
 }
 .Ready-to-start .btn {
   display: inline-block;
