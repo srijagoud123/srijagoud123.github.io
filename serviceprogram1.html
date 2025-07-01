@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Program 1</title>
+  <style>
+  /* RESET and GLOBAL styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  font-family: sans-serif;
+  background-color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Services Container */
+.services-container {
+  padding: 40px 20px;
+  background-color: #ffffff;
+  text-align: center;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/016/753/024/original/55-abstract-background-modern-futuristic-graphic-dark-blue-background-with-stripes-banner-white-and-grey-background-paper-cut-style-illustration-free-vector.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Heading & Paragraph */
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(250, 250, 253);
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+p {
+  font-size: 18px;
+  text-align: center;
+  color: #f8f8f8;
+  margin-bottom: 30px;
+}
+
+/* Section Layout */
+.services-section {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.left-column,
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 500px;
+  width: 100%;
+}
+
+/* Service Box */
+.service-box {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  
+
+}
+
+/* Service Box Image */
+.service-box img {
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto 10px auto;
+}
+
+/* Text in Boxes */
+.service-box h3 {
+  font-size: 23px;
+  margin-bottom: 8px;
+  color: #373adb;
+  text-align: center;
+}
+
+
+.service-box li{
+  font-size: 16px;
+  color: #101111;
+  text-align: start;
+  margin-bottom: 8px;
+  padding-left:20px;
+}
+ul{
+  padding-left: 10px;
+}
+
+/* Footer Image */
+.footer-img {
+  width: 50%;
+  margin: 30px auto 0 auto;
+  display: block;
+}
+
+/* Responsive: Mobile View */
+@media (max-width: 768px) {
+  .services-container {
+    padding: 20px 10px;
+  }
+
+  .left-column,
+  .right-column {
+    max-width: 100%;
+    width: 100%;
+    align-items: center;
+  }
+
+  .service-box {
+    width: 100%;
+    text-align: center;
+  }
+
+  .service-box h3 {
+    font-size: 22px;
+  }
+
+  .service-box li {
+    font-size: 15px;
+    text-align: start;
+    margin: 5px;
+  }
+
+  .footer-img {
+    width: 200%;
+    margin: 20px auto;
+  }
+}
+  </style>
+</head>
+
+<body>
+  <section class="services-container">
+    <h2>Website Design and Development</h2>
+    <p>We Create modern, functional websites tailored to your brand and business goals.</p>
+  
+    <div class="services-section">
+      <!-- Left Column -->
+      <div class="left-column">
+        <div class="service-box">
+          <img src="img/service-box1-img.jpg" alt="">
+          <h3>Business Websites</h3>
+          <ul>
+          <li>Clean, professional layout for service-based businesses</li>
+          <li>Strong branding with consistent colors and typography</li>
+          <li>Clear sections for About, Services, Testimonials, and Contact</li>
+          <li>Call-to-action buttons to increase leads and inquiries</li>
+          </ul>
+        </div>
+        <div class="service-box">
+          <img src="img/service-box2-img.jpg" alt="">
+          <h3> E-commerce Websites</h3>
+          <ul>
+            <li>Product catalog with categories and filters</li>
+            <li>Add-to-cart, wishlist, and checkout functionality</li>
+            <li>Integrated payment gateways (UPI, Razorpay, Stripe, etc.)</li>
+            <li>Inventory management and order tracking system </li>
+            <li>Admin dashboard to manage products and orders</li>
+          </ul>
+        </div>
+        <div class="service-box">
+          <img src="img/service-box3-img.jpg" alt="">
+          <h3> Responsive Design</h3>
+          <ul>
+            <li>Mobile-friendly layout that adjusts to all screen sizes</li>
+            <li>Optimized for tablets, laptops, and smartphones</li>
+            <li>Fast-loading pages with lightweight images and code</li>
+            <li>Touch-friendly buttons and easy navigation on mobile</li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Right Column -->
+      <div class="right-column">
+        <div class="service-box">
+          <img src="img/service-box4-img.jpg" alt="">
+          <h3>Custom Features</h3>
+          <ul>
+            <li>Booking forms, contact forms, and enquiry systems</li>
+            <li>Testimonials, ratings, and review sections</li>
+            <li>Image and video galleries</li>
+            <li>Google Maps and location integration</li>
+            <li>Newsletter subscription or popups</li>
+          </ul>
+        </div>
+
+       
+        <div class="service-box">
+          <img src="img/service-box5-img.jpg" alt="">
+          <h3> Secure Hosting & Domain Setup</h3>
+         <ul>
+          <li> Secure Hosting & Domain Setup</li>
+          <li>Domain name purchase and connection</li>
+          <li>Hosting setup (shared, VPS, or cloud – as needed)</li>
+          <li>SSL certificate installation for secure browsing (HTTPS)</li>
+          <li>Email setup (info@yourdomain.com)</li>
+          <li>Backup and security measures to keep your site safe</li> 
+         </ul>
+        </div>
+      </div>
+      
+      
+      
+        
+         
+        </div>
+      </div>
+    </div>
+  </section>
+     
+     
+   
+  
+</body>
+</html>
