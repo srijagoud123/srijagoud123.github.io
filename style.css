@@ -47,7 +47,7 @@ header {
 }
 
 .logo span {
-  color: #3e34ca;
+  color: #5b33ec;
 }
 
 
@@ -74,11 +74,11 @@ header {
 }
 
 .a-element:hover {
-  color: #3d11b6;
+  color: #5b33ec;
 }
 
 .a-element:last-child {
-  background-color:#3e34ca;
+  background-color:#5b33ec;
   color: white;
   padding: 8px 16px;
   border-radius: 30px;
@@ -87,7 +87,7 @@ header {
 }
 
 .a-element:last-child:hover {
-  background-color: #534dde;
+  background-color: #5b33ec;
 }
 
 /* ✅ Responsive */
@@ -187,13 +187,13 @@ header {
 
 .home-buttons .primary {
   background-color: white;
-  color: #3e34ca;
+  color: #5b33ec;
 }
 
 .home-buttons .secondary {
   
   background-color: white;
-  color:#3e34ca;;
+  color:#5b33ec;
  
 }
 
@@ -237,7 +237,6 @@ header {
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #f8f9ff;
-  color: #333;
   padding: 1rem;
   background-size: 100%;
   background-image: url("img/start\ your\ project.jpg");
@@ -251,13 +250,16 @@ body {
 
 .services-section h2 {
   font-size: 2rem;
-  color: #5a4fcf;
+  color: #5b33ec;
 }
+
 
 .services-section .description {
   margin: 0.5rem auto 2rem;
   max-width: 600px;
-  color: #666;
+  font-weight:bold;
+  color: black;
+ 
 }
 
 .services-container {
@@ -416,13 +418,14 @@ background-size: 100%;
 }
 
 .text-content h2 {
-  color: #1a3fc7;
+  color:#5b33ec;
   font-size: 28px;
   margin-bottom: 20px;
 }
 
 .text-content p {
   font-size: 15px;
+  font-weight: bold;
   line-height: 1.6;
   margin-bottom: 20px;
   color: #333;
@@ -439,6 +442,7 @@ background-size: 100%;
 .text-content li {
   margin-bottom: 10px;
   text-align: start;
+  font-weight: bold;
 }
 
 .text-content li::before {
@@ -450,16 +454,16 @@ background-size: 100%;
 
 .blue-box {
   flex: 1;
-  background-color: #1a3fc7;
+  background-color: #5b33ec;
   color: white;
-  padding: 60px;
+  padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   width: 50%;
-  padding: 80px 20px;
+  padding: 50px 20px;
   position: relative;
-  top:100px;
+  top:40px;
  
 }
 
@@ -470,7 +474,8 @@ background-size: 100%;
 
 .blue-box p {
   margin: 0;
-  font-size: 20px;
+  text-align: center;
+  font-size: 18px;
   line-height: 1.5;
 }
 
@@ -517,17 +522,17 @@ background-image: url("img/start\ your\ project.jpg");
 
 .Ready-to-start h2 {
   font-size: 35px;
-  color:  #3e34ca;
+  color:  #5b33ec;
 }
 .Ready-to-start p {
   font-size: 18px;
-  color: #3e34ca;
+  color: #5b33ec;
   
 }
 .Ready-to-start .btn {
   display: inline-block;
   padding: 10px 10px;
-  border: 2px solid #3e34ca;
+  border: 2px solid #5b33ec;
   border-radius: 16px;
   margin: 10px;
   font-weight: bold;
@@ -537,22 +542,17 @@ background-image: url("img/start\ your\ project.jpg");
 
 .Ready-button .primary {
   background-color: white;
-  color:#3e34ca;
+  color:#5b33ec;
 }
 
-.Ready-button .secondary {
-  
-  background-color: white;
-  color:#3e34ca;
- 
-}
+
 
 @media (max-width: 768px){
   .Ready-to-start{
     text-align: center;
     margin: 0;
     padding: 30px 30px;
-    background-color:  #435ec0;;
+    background-color:  #5b33ec;
   }
   
   .Ready-to-start h2 {
@@ -564,7 +564,7 @@ background-image: url("img/start\ your\ project.jpg");
   .Ready-to-start .btn {
     display: inline-block;
     padding: 10px 10px;
-    border: 2px solid #3e34ca;
+    border: 2px solid #5b33ec;
     border-radius: 16px;
     margin: 10px;
     font-weight: bold;
@@ -574,18 +574,12 @@ background-image: url("img/start\ your\ project.jpg");
   
   .Ready-button .primary {
     background-color: white;
-    color:#3e34ca;
+    color:#5b33ec;
   }
   
-  .Ready-button .secondary {
-    
-    background-color: white;
-    color:#3e34ca;
-   
-  }
+ 
 
 }
-
 /*--Get in Touch*/
 
 .Footer-container {
@@ -736,5 +730,4 @@ ul{
 
 
   
-
 
